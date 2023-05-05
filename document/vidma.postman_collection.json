@@ -1,0 +1,1024 @@
+{
+	"info": {
+		"_postman_id": "ab601d2e-7aac-4f36-9891-1fd295c02df8",
+		"name": "vidma",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13007660"
+	},
+	"item": [
+		{
+			"name": "http://localhost:7000/signup/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emp_name\": \"aqib\",\r\n    \"designation\":\"dev\",\r\n    \"phonenumber\":\"24435442\",\r\n    \"email\":\"rafayabssdul0340@gmail.com\",\r\n    \"password\":\"Qwerty1234$\",\r\n    \"city\":\"test\",\r\n    \"state\":\"test\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/EmployerSignup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"EmployerSignup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/task/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employer_id\": 9,\r\n    \"date_start\" : \"12-3-21\",\r\n    \"date_end\": \"12-3-23\",\r\n    \"employee_id\": 7,\r\n    \"employee_name\": \"ffff\",\r\n    \"employee_designation\": \"fddsa\",\r\n    \"time_start\": \"10 pm\",\r\n    \"time_end\": \"12 pm \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/task/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"task",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/getalltasks/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/getalltasks/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"getalltasks",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/getbyemployerid/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/getbyemployerid/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"getbyemployerid",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/getbyemployeeid/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/getbyemployeeid/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"getbyemployeeid",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/deletetask",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/deletetask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"deletetask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/updateschedule",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"employer_id\": 4,\r\n    \"date_start\" : \"12-6-19\",\r\n    \"date_end\": \"12-3-22\",\r\n    \"employee_id\": 7,\r\n    \"employee_name\": \"deaerf\",\r\n    \"employee_designation\": \"cvbbrr\",\r\n    \"time_start\": \"10 am\",\r\n    \"time_end\": \"7 pm \",\r\n    \"id\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/updateschedule",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"updateschedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/AdminLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://vidmabackend.scoopsolutions.us/AdminLogin",
+					"protocol": "http",
+					"host": [
+						"vidmabackend",
+						"scoopsolutions",
+						"us"
+					],
+					"path": [
+						"AdminLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/EmployeeSignup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emp_name\": \"test\",\r\n    \"designation\":\"devel\",\r\n    \"phonenumber\":\"24435442\",\r\n    \"email\":\"aqibakram.2000@gmail.com\",\r\n    \"password\":\"Qwerty1234$\",\r\n    \"city\":\"test\",\r\n    \"state\":\"test\",\r\n    \"employer_id\":7\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/EmployeeSignup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"EmployeeSignup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"rafayabdul0340@gmail.com\",\r\n    \"password\":\"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://vidmabackend.scoopsolutions.us/Login",
+					"protocol": "https",
+					"host": [
+						"vidmabackend",
+						"scoopsolutions",
+						"us"
+					],
+					"path": [
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/getAllEmployers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/getAllEmployers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"getAllEmployers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/getAllEmployees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/getAllEmployees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"getAllEmployees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/GetEmail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\":\"aqibakram.2000@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/GetEmail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"GetEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/EmailOtp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"otp\":\"6259\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/EmailOtp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"EmailOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/changePasswordForget",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"Email\":\"aqibakram.2000@gmail.com\",\r\n     \"Create_Password\":\"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/changePasswordForget",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"changePasswordForget"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://vidmabackend.scoopsolutions.us/getProfiles/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://vidmabackend.scoopsolutions.us/getProfiles/5",
+					"protocol": "https",
+					"host": [
+						"vidmabackend",
+						"scoopsolutions",
+						"us"
+					],
+					"path": [
+						"getProfiles",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/getalltasksWithEmployeeProfileByEmployerId/9",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/getalltasksWithEmployeeProfileByEmployerId/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"getalltasksWithEmployeeProfileByEmployerId",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/profileInsert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/E:/vidma frontend/vidma/assets/slicing/Employee/chip.png"
+						},
+						{
+							"key": "user_id",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "hghh",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ghghb@hjghj.com",
+							"type": "text"
+						},
+						{
+							"key": "number",
+							"value": "566565",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "tttt",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "ttt",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://vidmabackend.scoopsolutions.us/profileInsert",
+					"protocol": "http",
+					"host": [
+						"vidmabackend",
+						"scoopsolutions",
+						"us"
+					],
+					"path": [
+						"profileInsert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://vidmabackend.scoopsolutions.us/updateProfiles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/SCP05/Downloads/eid logo.png"
+						},
+						{
+							"key": "name",
+							"value": "hhgu",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "hhh@hh.com",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "hjj",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "jjj",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "number",
+							"value": "66666",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:7000/updateProfiles",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"updateProfiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/CreateContact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employer_id\":9,\r\n    \"contact\":1,\r\n    \"subject\":\"fgfgg\",\r\n    \"message\":\"fdfs\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/CreateContact",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"CreateContact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/getContactEmployer/9",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:7000/getContactEmployer/9",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"getContactEmployer",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/getContactAdmin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vidmabackend.scoopsolutions.us/getContactAdmin",
+					"protocol": "http",
+					"host": [
+						"vidmabackend",
+						"scoopsolutions",
+						"us"
+					],
+					"path": [
+						"getContactAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/CreateBreak",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"task_id\":1,\r\n    \"employee_id\":7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/CreateBreak",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"CreateBreak"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/CreateTimeOut",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"task_id\":1,\r\n    \"employee_id\":7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/CreateTimeOut",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"CreateTimeOut"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/CreateTimeIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"task_id\":1,\r\n    \"employee_id\":7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/CreateTimeIn",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"CreateTimeIn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/CreateLeaveRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employee_id\":18,\r\n    \"employee_name\":\"dsdds\",\r\n    \"employee_designation\":\"ssdws\",\r\n    \"start_date\":\"2021/05/21\",\r\n    \"end_date\":\"2021/05/21\",\r\n    \"description\":\"description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/CreateLeaveRequest",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"CreateLeaveRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/UpdateRequestStatus",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"status\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/UpdateRequestStatus",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"UpdateRequestStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/getRequestByEmployerId/7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/getRequestByEmployerId/7",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"getRequestByEmployerId",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/getRequestByEmployeeId/18",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:7000/getRequestByEmployeeId/18",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"getRequestByEmployeeId",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/CreateService",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"jhkjhjk\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/CreateService",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"CreateService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/UpdateService",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"jhkjhjk\",\r\n    \"id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/UpdateService",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"UpdateService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/getService",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:7000/getService",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"getService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/getServiceById/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:7000/getServiceById/1",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"getServiceById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/CreateInvoice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"billed_to\":\"billed_to\",\r\n    \"address\":\"address\",\r\n    \"cost_per_hr\":\"3\",\r\n    \"no_of_hrs\":\"1\",\r\n    \"invoice_no\":\"22\",\r\n    \"due_date\":\"2222/22/22\",\r\n    \"email\":\"ree@wwe.com\",\r\n    \"service_id\":1,\r\n    \"terms\":\"terms\",\r\n    \"status\":\"status\",\r\n    \"user_id\":12,\r\n    \"task_id\":4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/CreateInvoice",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"CreateInvoice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/getTotalHoursAndInvoiceNo/7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:7000/getTotalHoursAndInvoiceNo/7",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"getTotalHoursAndInvoiceNo",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/getInvoicesByEmployeeId/7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:7000/getInvoicesByEmployeeId/7",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"getInvoicesByEmployeeId",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/getInvoicesById/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:7000/getInvoicesById/1",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"getInvoicesById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/sendInvoice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/sendInvoice",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"sendInvoice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://vidmabackend.scoopsolutions.us/getInvoicesByEmployerId/7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vidmabackend.scoopsolutions.us/getInvoicesByEmployerId/7",
+					"protocol": "http",
+					"host": [
+						"vidmabackend",
+						"scoopsolutions",
+						"us"
+					],
+					"path": [
+						"getInvoicesByEmployerId",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
